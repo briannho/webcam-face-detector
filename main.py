@@ -70,15 +70,6 @@ def main():
 	# start webcam
 	cap = cv2.VideoCapture(0)
 
-	# save video
-	frame_width = int(cap.get(3))
-	frame_height = int(cap.get(4))
-	fourcc = cv2.VideoWriter_fourcc('M','J','P','G')
-	out = cv2.VideoWriter('test.avi',
-						  fourcc, 
-						  10, 
-						  (frame_width,frame_height))
-
 	# initialize vars
 	face_boxes = []
 	names = []
@@ -121,9 +112,6 @@ def main():
 
 	    # Show the frame
 	    cv2.imshow('Video', frame)
-
-	    # save frame
-	    out.write(frame)
 
 	    if cv2.waitKey(1) & 0xFF == ord('q'):
 	        break
