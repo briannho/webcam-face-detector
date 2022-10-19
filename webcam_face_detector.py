@@ -4,9 +4,9 @@
 @author: Brian Ho
 """
 
-import numpy as np
 import os
 
+import numpy as np
 import cv2
 import torch
 from facenet_pytorch import MTCNN, InceptionResnetV1

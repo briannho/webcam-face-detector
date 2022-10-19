@@ -4,10 +4,10 @@
 @author: Brian Ho
 """
 
-import numpy as np
 import os
 
 import cv2
+import numpy as np
 import torch
 from facenet_pytorch import MTCNN, InceptionResnetV1
 from PIL import Image
